@@ -22,8 +22,15 @@ def cadastrar_livro():
     autor = input("Autor do livro: ")
     genero = input("Gênero do livro: ")
 
+<<<<<<< HEAD
     livro = Livro(titulo, autor, genero, 1)
     print(f"\n✅ Livro '{titulo}' cadastrado com sucesso!\n")
+=======
+    livro = {"titulo": titulo, "autor": autor, "genero": genero}
+    livros.append(livro)
+    print(f"Livro '{titulo}' cadastrado com sucesso!\n")
+
+>>>>>>> 710cfdb3cb6c094d494e8e5a59e424640d8ff73c
 
 def listar_livros():
     if not livros:
@@ -92,4 +99,8 @@ def menu():
 
 
 # Executa o sistema
+<<<<<<< HEAD
 menu()
+=======
+menu()
+>>>>>>> 710cfdb3cb6c094d494e8e5a59e424640d8ff73c
